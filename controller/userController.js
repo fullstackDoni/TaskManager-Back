@@ -19,7 +19,11 @@ const login = async (req, res) => {
         }
 
         // Генерация JWT токена
-        const token = jwt.sign({userId: user._id}, 'test', {expiresIn: '1h'});
+        const token = jwt.sign({userId: user._id}, 'test', {expiresIn
+    :
+        '1h'
+    })
+        ;
 
         res.status(200).json({token});
     } catch (error) {

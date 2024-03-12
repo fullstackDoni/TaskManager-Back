@@ -8,7 +8,6 @@ const userRoutes = require("./routes/userRoutes");
 const app = express();
 const port = process.env.PORT || 3000;
 app.use(express.json());
-
 app.use(bodyParser.json());
 const mongoURI = 'mongodb+srv://tkyskii2004:q3que54sucxcEYYA@tkyskii2004.ow08837.mongodb.net/?retryWrites=true&w=majority';
 mongoose.connect(mongoURI, {useNewUrlParser: true, useUnifiedTopology: true})
